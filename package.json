@@ -1,0 +1,27 @@
+{
+  "name": "linter-gadkod",
+  "main": "./lib/init",
+  "activationCommands": {},
+  "version": "0.0.0",
+  "description": "Lint your file for suspicious unicode characters in code (like greek question mark…)",
+  "repository": "https://github.com/leny/linter-gadkod.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^2.0.3",
+    "resolve": "^1.1.5",
+    "gadkod": "^0.1.1"
+  }
+}
